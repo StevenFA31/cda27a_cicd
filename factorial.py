@@ -1,11 +1,24 @@
+"""
+
+Module pour calculer la factorielle
+
+"""
+
 import time
 
 final_list = []
-# sfqs
-# sfqs
 
 
 def factorial(n):
+    """
+    Fonction pour calculer la factorielle de n
+
+    Args:
+        n : nombre
+
+    Returns:
+        la factorielle
+    """
     time.sleep(.1)
     factorial = 1
 
@@ -16,10 +29,19 @@ def factorial(n):
 
 
 def sum_factorial():
+    """
+    Fonction pour calculer la factorielle de n
+
+    Args:
+        n : nombre
+
+    Returns:
+        la factorielle
+    """
     for i in range(50):
         final_list.append(factorial(i))
     result = sum(final_list)
-    print("Final SUM = {}".format(result))
+    print(f"Final SUM = {result}")
 
     return result
 
